@@ -5,11 +5,11 @@ const ItemsModel = require('./models/Items')
 
 const app = express()
 app.use(cors(
-    // {
-    //     origin : ['https://mern-frontend-steel.vercel.app'],
-    //     methods : ["POST","GET","PUT"],
-    //     credentials : true
-    // }
+    {
+        origin : ['https://mern-frontend-steel.vercel.app'],
+        methods : ["POST","GET","PUT"],
+        credentials : true
+    }
 ))
 
 // const allowCors = fn => async (req, res) => {
