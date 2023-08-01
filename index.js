@@ -1,12 +1,10 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
-const allowCors = require('allowCors')
 const ItemsModel = require('./models/Items')
 
 const app = express()
-app.use(cors())
-app.use(allowCors(
+app.use(cors(
     {
         origin : ['https://mern-frontend-steel.vercel.app'],
         methods : ["POST","GET","PUT"],
