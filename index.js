@@ -83,6 +83,9 @@ app.put('/UpdateItems/:id', (req, res) => {
 //     .then(res => res.json(res))
 //     .catch(err => json(err))
 // })
+app.get('/cors', (req, res) => {
+    res.send('This has CORS enabled 🎈')
+})
 
 app.get('*',(req,res,next)=>{
     res.status(200).json({
