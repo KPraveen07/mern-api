@@ -87,7 +87,7 @@ app.get('/cors', (req, res) => {
     res.send('This has CORS enabled 🎈')
 })
 
-app.get('/',(req,res,next)=>{
+app.get('*',(req,res)=>{
     res.status(200).json({
       message:'bad request'
     })
