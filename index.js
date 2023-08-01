@@ -5,14 +5,14 @@ const allowCors = require('allowCors')
 const ItemsModel = require('./models/Items')
 
 const app = express()
-app.use(cors(
+app.use(cors())
+app.use(allowCors(
     {
         origin : ['https://mern-frontend-steel.vercel.app'],
         methods : ["POST","GET","PUT"],
         credentials : true
     }
 ))
-app.use(allowCors())
 
 // const allowCors = fn => async (req, res) => {
 //     res.setHeader('Access-Control-Allow-Credentials', true)
@@ -99,11 +99,11 @@ app.put('/UpdateItems/:id', (req, res) => {
 //     res.send('This has CORS enabled 🎈')
 // })
 
-// app.get('*',(req,res)=>{
-//     res.status(200).json({
-//       message:'bad request'
-//     })
-//   })
+app.get('*',(req,res)=>{
+    res.status(200).json({
+      message:'bad request'
+    })
+  })
 
 app.listen(3001, () => {
     console.log("Server is Running")
