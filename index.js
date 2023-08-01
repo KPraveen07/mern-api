@@ -94,8 +94,8 @@ app.put('/UpdateItems/:id', (req, res) => {
 //     })
 //   })
 
-// app.listen(3001, () => {
-//     console.log("Server is Running")
-// })
+app.listen(3001, () => {
+    console.log("Server is Running")
+})
 
 // module.exports = app;
