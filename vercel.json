@@ -2,12 +2,12 @@
     "version": 2,
     "name": "menu",
     "builds": [
-       { "src": "*.js", "use": "@vercel/node" }
+       { "src": "index.js", "use": "@vercel/node" }
     ],
     "routes": [
        {
          "src": "/(.*)",
-        "dest": "/"
+        "dest": "/index.js"
       }
     ],
       "headers": [
