@@ -87,12 +87,12 @@ app.put('/UpdateItems/:id', (req, res) => {
         .catch(err => res.json(err))   
     })
 
-// app.delete('/deleteItem/:id', (req, res) => {
-//     const id = req.params.id;
-//     ItemsModel.findByIdAndDelete({_id: id})
-//     .then(res => res.json(res))
-//     .catch(err => json(err))
-// })
+app.delete('/deleteItem/:id', (req, res) => {
+    const id = req.params.id;
+    ItemsModel.findByIdAndDelete({_id: id})
+    .then(res => res.json(res))
+    .catch(err => json(err))
+})
 // app.get('/cors', (req, res) => {
 //     res.send('This has CORS enabled 🎈')
 // })
