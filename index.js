@@ -41,7 +41,7 @@ app.use(express.json())
 
 //mongoose.connect("mongodb://127.0.0.1:27017/MERN")
 
-const MONGODB_URI = 'mongodb+srv://mern-net:<GgbLJeZKYKeygb4Y>@mern-net.xnunrss.mongodb.net/?retryWrites=true&w=majority'
+const MONGODB_URI = 'mongodb+srv://mern-ren:lcLqzeaLshgrQNw6@mern-ren.g8tmbik.mongodb.net/mernstack?retryWrites=true&w=majority'
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
