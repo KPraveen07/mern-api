@@ -10,5 +10,5 @@ const ItemsSchema = new mongoose.Schema({
     description: String
 })
 
-const ItemsModel = mongoose.model("mern-net", ItemsSchema)
+const ItemsModel = mongoose.model("dishes", ItemsSchema)
 module.exports = ItemsModel
